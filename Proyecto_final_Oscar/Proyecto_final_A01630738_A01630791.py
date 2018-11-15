@@ -1,4 +1,4 @@
-#Julio Arath Rosales Oliden
+     #Julio Arath Rosales Oliden
 #Oscar Miranda
 
 def hospitales_estado(estado):
@@ -22,17 +22,18 @@ def hospitales_estado(estado):
                     estados_lista = estados_sin_espacios.split(",")
                     if estado == estados_lista[0]:
                         abreviado=estados_lista[1]
-                for linea in archivo:
-                    sin_espacios=linea.rstrip()
-                    lista=sin_espacios.split(",")
-                    subir_string=""
-                    if lista[4] == abreviado:
-                        print(f"Estado: {lista[4]}, Telefono:{lista[7]}")
-                        subir_string+=(f"Estado: {lista[4]}, Telefono:{lista[7]}"+"\n")
-                        lista_estados.close()
-                    subir.write(subir_string)
+                        for linea in archivo:
+                            sin_espacios = linea.rstrip()
+                            lista = sin_espacios.split(",")
+                            subir_string = ""
+                            if lista[4] == abreviado:
+                                print(f"Estado: {lista[4]}, Telefono:{lista[7]}")
+                                subir_string += (f"Estado: {lista[4]}, Telefono:{lista[7]}" + "\n")
+                            subir.write(subir_string)
+
+                lista_estados.close()
                 subir.close()
         archivo.close()
 
-estado="Colorado"
+estado="Alabama"
 hospitales_estado(estado)
