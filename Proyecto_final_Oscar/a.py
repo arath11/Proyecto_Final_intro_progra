@@ -56,6 +56,7 @@ def porcentaje_hospitales_a(afeccion):
                 for linea_estados in lista_estados:
                     estados_sin_espacios = linea_estados.rstrip()
                     estados_lista = estados_sin_espacios.split(",")
+                    print(estados_lista[1])
                     cantidad = 0
                     precio = 0
                     try:
@@ -68,9 +69,25 @@ def porcentaje_hospitales_a(afeccion):
                             if lista[4] == estados_lista[1] and lista[8] == enfermedad and lista[12] not in "Not Available ":
                                 cantidad += 1
                                 precio += float(lista[12])
+                                print(f"Hospital:{lista[1]} enfermedad:{lista[8]} precio:{lista[12]} ")
                         if cantidad!=0:
                             total = precio / cantidad
-                            subir_string+=(f"El estado de  {estados_lista[0]} tiene un promedio de {total}, en la afeccion {enfermedad}\n")
+                            print(total, precio, cantidad)
+                            #subir_string+=(f"El estado de  {estados_lista[0]} tiene un promedio de {total}, en la afeccion {enfermedad}\n")
+                        archivo.close()
+                        try:
+                            archivo = open("pvc.csv", "r", encoding="UTF-8")
+                        except IOError:
+                            print("No se puede abrir ó no se encuentra el archivo")
+                        else:
+                            numero_promedio = 0
+                            for linea in archivo:
+                                lista = remove_space(linea)
+                                if lista[4] == estados_lista[1] and lista[8] == enfermedad and lista[12] not in "Not Available " :
+                                    print(total,float(lista[12]))
+                                    if total<float(lista[12]):
+                                        numero_promedio+=1
+                            subir_string += (f"El estado de  {estados_lista[0]} tiene un promedio de {total} y {numero_promedio} de hospitales arriba del promedio, en la afeccion {enfermedad}\n")
                         archivo.close()
                 subir.write(subir_string)
 

@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0fd9d43-f8ac-48cd-8509-35145f1ecf8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Prueba_funcion1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prueba_funcion4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyecto_final_A01630738_A01630791.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto_final_A01630738_A01630791.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pvc.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pvc.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Estados_ataque_mayor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Estados_ataque_mayor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prueba_funcion4.py" beforeDir="false" afterPath="$PROJECT_DIR$/prueba_funcion4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +46,7 @@
     <session id="-1919790132">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -57,34 +54,34 @@
           <entry key="project.open.time.15151" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="34" />
-          <entry key="py" value="21" />
+          <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="34" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="21" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="112" />
-          <entry key="py" value="5446" />
+          <entry key="py" value="5803" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="112" />
-          <entry key="Python" value="5444" />
+          <entry key="Python" value="5801" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -97,20 +94,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prueba_funcion4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="353">
+              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="84" column="59" lean-forward="true" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Estados_ataque_mayor.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="528">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -147,9 +153,10 @@
         <option value="$PROJECT_DIR$/Prueba_funcion1.py" />
         <option value="$PROJECT_DIR$/Hospitales_Alabama.csv" />
         <option value="$PROJECT_DIR$/l.py" />
+        <option value="$PROJECT_DIR$/pvc.csv" />
         <option value="$PROJECT_DIR$/Estados_ataque_mayor.csv" />
         <option value="$PROJECT_DIR$/prueba_funcion4.py" />
-        <option value="$PROJECT_DIR$/pvc.csv" />
+        <option value="$PROJECT_DIR$/a.py" />
       </list>
     </option>
   </component>
@@ -165,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,6 +192,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,28 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prueba_funcion4">
-    <configuration name="Proyecto_final_A01630738_A01630791" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Proyecto_final_Oscar" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Proyecto_final_A01630738_A01630791.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.a">
     <configuration name="Prueba_funcion1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Proyecto_final_Oscar" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,6 +231,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prueba_funcion1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Proyecto_final_Oscar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -317,19 +324,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Proyecto_final_A01630738_A01630791" />
       <item itemvalue="Python.pruebas" />
       <item itemvalue="Python.Prueba_funcion1" />
       <item itemvalue="Python.l" />
       <item itemvalue="Python.prueba_funcion4" />
+      <item itemvalue="Python.a" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.a" />
         <item itemvalue="Python.prueba_funcion4" />
         <item itemvalue="Python.l" />
         <item itemvalue="Python.Prueba_funcion1" />
         <item itemvalue="Python.pruebas" />
-        <item itemvalue="Python.Proyecto_final_A01630738_A01630791" />
       </list>
     </recent_temporary>
   </component>
@@ -452,14 +459,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <marker date="1542484244978" expanded="true" signature="556:645" ph="..." />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/l.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pvc.csv">
       <provider editor-type-id="text-editor">
@@ -473,17 +474,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prueba_funcion4.py">
+    <entry file="file://$PROJECT_DIR$/l.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Estados_ataque_mayor.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="173">
+          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="528">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Estados_ataque_mayor.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="528">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+    <entry file="file://$PROJECT_DIR$/a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="84" column="59" lean-forward="true" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prueba_funcion4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
         </state>
       </provider>
     </entry>
