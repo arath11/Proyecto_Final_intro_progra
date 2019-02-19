@@ -2,7 +2,7 @@ def remove_space(linea):
     sin_espacios = linea.rstrip()
     lista = sin_espacios.split(",")
     return lista
-estado="Alabama"
+
 
 def comparacion_():
     try:
@@ -30,11 +30,6 @@ def state(estado):
             if estado==estados_lista[0]:
                 return estados_lista[1]
 
-
-def remove_space(linea):
-    sin_espacios = linea.rstrip()
-    lista = sin_espacios.split(",")
-    return lista
 
 def hospitales_estado(estado):
     try:
@@ -74,7 +69,7 @@ def afeccion_abreviado(afeccion):
     elif afeccion == "neumonia":
         return "Payment for pneumonia patients"
 
-def porcentaje_hospitales_a(afeccion):
+"""def porcentaje_hospitales_a(afeccion):
     try:
         lista_estados = open("estados.csv", "r+", encoding="UTF-8")
     except IOError:
@@ -116,7 +111,7 @@ def porcentaje_hospitales_a(afeccion):
 
 a="ataque"
 #neumonia, cadera, ataque, falla
-porcentaje_hospitales_a(a)
+porcentaje_hospitales_a(a)"""
 
 
 

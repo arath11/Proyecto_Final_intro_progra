@@ -29,6 +29,7 @@ def state(estado):
             if estado==estados_lista[0]:
                 return estados_lista[1]
 
+
 def afeccion_abreviado(afeccion):
     if afeccion == "ataque":
         return "Payment for heart attack patients"
@@ -45,39 +46,45 @@ def porcentaje_hospitales_a(afeccion):
     except IOError:
         print("No se puede abrir ó no se encuentra el archivo")
     else:
-
-            try:
-                subir = open("Estados" + "_" + afeccion + "_" + "mayor.csv", "w+", encoding="UTF-8")
-            except IOError:
-                print("No se puede abrir ó no se encuentra el archivo")
-            else:
-                enfermedad = afeccion_abreviado(afeccion)
-                subir_string = ""
-                for linea_estados in lista_estados:
-                    estados_sin_espacios = linea_estados.rstrip()
-                    estados_lista = estados_sin_espacios.split(",")
-                    cantidad = 0
-                    precio = 0
-                    try:
-                        archivo = open("pvc.csv", "r", encoding="UTF-8")
-                    except IOError:
-                        print("No se puede abrir ó no se encuentra el archivo")
+        try:
+            subir = open("nombre.csv", "w+", encoding="UTF-8")
+        except IOError:
+            print("No se puede abrir ó no se encuentra el archivo")
+        else:
+            enfermedad = afeccion_abreviado(afeccion)
+            subir_string = ""
+            subir.write(f"cabeza \n")
+            for linea_estados in lista_estados:
+                estados_sin_espacios = linea_estados.rstrip()
+                estados_lista = estados_sin_espacios.split(",")
+                cantidad_estados = 0
+                cantidad = 0
+                precio = 0
+                try:
+                    archivo = open("pvc.csv", "r", encoding="UTF-8")
+                except IOError:
+                    print("No se puede abrir ó no se encuentra el archivo")
+                else:
+                    for linea in archivo:
+                        lista = remove_space(linea)
+                        if lista[4] == estados_lista[1] and lista[8] == enfermedad and lista[
+                            10] == "Greater than the National Average Payment":
+                            cantidad += 1
+                            cantidad_estados += 1
+                        elif lista[4] == estados_lista[1] and lista[8] == enfermedad:
+                            cantidad_estados += 1
+                    total = cantidad / cantidad_estados * 100
+                    if cantidad != 0:
+                        subir_string += (f"{estados_lista[0]},{cantidad},{cantidad_estados},{total}\n")
                     else:
-                        for linea in archivo:
-                            lista = remove_space(linea)
-                            if lista[4] == estados_lista[1] and lista[8] == enfermedad and lista[12] not in "Not Available ":
-                                cantidad += 1
-                                precio += float(lista[12])
-                        if cantidad!=0:
-                            total = precio / cantidad
-                            subir_string+=(f"El estado de  {estados_lista[0]} tiene un promedio de {total}, en la afeccion {enfermedad}\n")
-                        archivo.close()
-                subir.write(subir_string)
+                        subir_string += (f"{estados_lista[0]},0,0,0\n")
+                    archivo.close()
+            subir.write(subir_string)
 
-            subir.close()
+        subir.close()
 
-            lista_estados.close()
+        lista_estados.close()
 
-a="ataque"
+a="falla"
 #neumonia, cadera, ataque, falla
 porcentaje_hospitales_a(a)
